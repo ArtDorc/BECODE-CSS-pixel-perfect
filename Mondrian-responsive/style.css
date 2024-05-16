@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: end;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.container-grid {
+    background-color: black;
+    max-width: 748px;
+    max-height: 746px;
+    width: 80vw;
+    height: 80vw;
+    display: grid;
+    gap:1.20320%;
+    grid-template-columns: 320fr 198fr 153fr 50fr;
+    grid-template-rows: 414fr 130fr 155fr 20fr;
+    grid-template-areas: 
+    "r1 w1 w1 w1"
+    " w2 w3 w3 ble1"
+    "w2 w3 w3 w4"
+    "w5 y1 bla1 w4";
+}
+.wh {
+    background-color: rgb(240, 241, 236);
+}
+.redbox {
+    grid-area: r1;
+    background-color: rgb(213, 66, 50)
+}
+
+.whitebox1{
+    grid-area: w1;
+}
+.whitebox2{
+    grid-area: w2;
+}
+.whitebox3{
+    grid-area: w3;
+}
+.bluebox{
+    grid-area: ble1;
+    background-color: rgb(26, 58, 141);
+    display: flex;
+}
+.bluebox .border {
+    background-color: black;
+    align-self: flex-end;
+    bottom: 0;
+    width: 100%;
+    height: 7.6923%;
+}
+.whitebox4{
+    grid-area: w4;
+}
+.whitebox5{
+    grid-area: w5;
+}
+.yellowbox{
+    grid-area: y1;
+    background-color: rgb(242, 210, 77);
+}
+.blackbox{
+    grid-area: bla1;
+    background-color: rgb(36, 38, 41);
+}
+
+.container p {
+    font-weight: 600;
+}
+.container p span {
+    font-style: italic;
+    font-weight: 400;
+}
