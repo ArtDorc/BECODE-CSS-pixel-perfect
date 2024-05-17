@@ -249,4 +249,9 @@ body {
         flex-direction: column;
         margin-bottom: 80px;
     }
+
+    .main2 .article {
+        max-width: none;
+        min-height:129px;
+    }
 }
