@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background: linear-gradient(236.56deg, #2C2D65 0.35%, #201F22 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Barlow' ,sans-serif;
+}
+.container {
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 31px;
+    margin-bottom: 164px;
+    position: relative;
+}
+.logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    font-weight: 800;
+    color: #fff;
+}
+.logo span {
+    color: #E6606C;
+}
+header .headmenu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 33px;
+    row-gap:10px
+}
+header .headmenu a:is(:hover,:focus) {
+    color:#E6606C;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.background_image{
+    content: "";
+    background-image: url('../08-ultimate-CSS/ressources/background\ 1.png');
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    overflow: hidden;
+    transform: translate(15%,-17%);
+}
+.main1 {
+    letter-spacing: 0.045em;
+    max-width: 503px;
+    position: relative;
+    margin-bottom: 246px;
+}
+.main1 .title{
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+.main1 .subtitle {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #E8AB36;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.main1 .description {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #EFEFEF;
+    margin-bottom: 21px;
+    max-width: 406px;
+}
+
+.main1 .bx_buttons {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+.bx_buttons>* {
+    padding: 13px 30px;
+    border-radius: 75px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.05rem;
+    letter-spacing: 0.045em;
+    white-space: nowrap;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.bx_buttons>.start {
+    background-color: #E6606C;
+    color: #fff;
+}
+.main1 .more {
+    background-color: #fff;
+    color: #000;
+}
+.start:is(:hover,:focus){
+    background-color: #fff;
+    transition: all 0.3s ease;
+    color:#000;
+}
+.main1 .more:is(:hover,:focus){
+    background-color: #E6606C;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.main1 .title::before{
+    content:"";
+    background-image: url('../08-ultimate-CSS/ressources/background\ 2.png');
+    z-index: -1;
+    width: 142px;
+    height: 153px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -45px;
+    left: -40px;
+}
+.main1 .bx_buttons::after{
+    content:"";
+    background-image: url('../08-ultimate-CSS/ressources/background\ 3.png');
+    z-index: -1;
+    width: 184px;
+    height: 181px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -70px;
+    right: 75px;
+}
+
+.main2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 57px;
+}
+.main2 .text {
+    position: relative;
+    max-width: 470px;
+}
+.main2 .text .head {
+    font-size: 1rem;
+    line-height: 2em;
+    letter-spacing: .1875rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.main2 .text .title {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 321px;
+}
+
+.main2 .text .subtitle {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 28px;
+}
+
+.main2 .text .description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    opacity: 0.5;
+    margin-bottom: 28px;
+}
+
+.main2 .text .title::after {
+    content: "";
+    width: 210px;
+    height: 210px;
+    border: 3px rgba(255, 255, 255, 0.1) solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 68px;
+    right: 28px;
+}
+
+.main3 {
+    margin-bottom: 113px;
+}
+.main3 .part1 {
+    padding-top: 16px;
+}
+
+.main3 .part1 .head {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: .1875rem;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin: 0 auto 16px;
+}
+
+.main3 .part1 .title {
+    width: fit-content;
+    font-family: 'Barlow Condensed';
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 4rem;
+    text-align: center;
+    margin: 0 auto 32px;
+}
+.main3 .part1 .description {
+    font-family: 'Barlow';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+    opacity: 0.5;
+    max-width: 570px;
+    margin: 0 auto 70px;
+}
+
+.main3 .cards {
+    display:flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.main3 .cards .card {
+    display: grid;
+    grid-template-rows: 240fr 192fr;
+    border: 2px rgba(255, 255, 255, 0.1) solid;
+    border-radius: 12px;
+    box-shadow: 0px 24px 48px 0px #00012C28;
+    overflow: hidden;
+}
+.main3 .cards .card:is(:hover,:focus) {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.main3 .cards .card .text {
+    padding: 38px 32px;
+    background:linear-gradient(#4D4F95,#2B2D66)
+}
+
+.card .text .title {
+    font-family: 'Barlow Condensed';
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.card .text .date {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    opacity: 0.5;
+}
+
+.main3 .cards .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer .foot1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footmenu {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.footmenuli {
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+.footmenu li:first-child {
+    letter-spacing: .1875rem;
+    margin-bottom: 16px;
+    opacity: 0.5;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+.foot1 .network {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.foot1 .network>*{
+    background-color: #6357F6;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.foot1 .network a>img {
+    width:45%;
+    height: 45%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.foot1 .network .twitter:is(:hover,:focus) {
+    background-color: rgb(8, 160, 233);
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+.foot1 .network .facebook:is(:hover,:focus) {
+    background-color: rgb(66, 103, 178);
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.foot1 .network .insta:is(:hover,:focus) {
+    transition: all 0.3s ease;
+    background: radial-gradient(circle at 30% 110%,
+            #ffdb8b 0%,
+            #ee653d 25%,
+            #d42e81 50%,
+            #a237b6 75%,
+            #3e57bc 100%);
+    transform: scale(1.2);
+}
+.line {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+    margin-bottom: 41px;
+}
+.foot2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 76px;
+}
+
+.foot2 .legals {
+    display: flex;
+    justify-content: flex-end;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+.foot2 .copyright {
+    opacity: 0.5;
+}
+.foot2 .legals>*:is(:hover,:focus),
+.footmenu .footmenuli a:is(:hover,:focus) {
+    text-decoration: underline;
+}
