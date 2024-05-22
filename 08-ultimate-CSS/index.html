@@ -15,17 +15,28 @@
     <header class="container">
         <p class="logo">MY<span>LOGO</span></p>
         <ul class="headmenu">
-            <a class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </a>
             <a class="displayed" href="#">home.</a href="#">
             <a class="displayed" href="#">about.</a href="#">
             <a class="displayed" href="#">projects.</a href="#">
             <a class="displayed" href="#">team.</a href="#">
             <a class="displayed" href="#">contact.</a href="#">
         </ul>
+        <div class="togglemenu">
+            <input type="checkbox" id="togglecheck">
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="menutoggled">
+                <a href="#"><li>home.</li></a>
+                <a href="#"><li>about.</li></a>
+                <a href="#"><li>projects.</li></a>
+                <a href="#"><li>team.</li></a>
+                <a href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/" target="_blank"><li>contact.</li></a>
+            </ul>
+
+        </div>
     </header>
     <section class="container one">
         <div class="main1">
@@ -104,7 +115,6 @@
                 <li class="footmenuli"><a href="#">Strategy</a></li>
                 <li class="footmenuli"><a href="#">Concepting</a></li>
                 <li class="footmenuli"><a href="#">Development</a></li>
-
             </ul>
             <div class="network">
                 <a href="#" class="facebook"><img src="../08-ultimate-CSS/ressources/facebook.png" alt="facebook"></a>

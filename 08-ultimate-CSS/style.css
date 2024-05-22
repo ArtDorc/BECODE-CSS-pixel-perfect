@@ -12,7 +12,17 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
-
+.togglemenu {
+    display:none;
+}
+#menutoggled>* li{
+    display:grid;
+    place-items: center;
+    padding: 10px 5px;
+}
+#menutoggled {
+    display:none;
+}
 header.container {
     display: flex;
     justify-content: space-between;
@@ -43,11 +53,12 @@ header .headmenu a:is(:hover,:focus) {
     color:#E6606C;
     transform: scale(1.1);
     transition: all 0.3s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .body_wrapper {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Assure que les enfants ne débordent pas */
+    overflow: hidden;
 }
 .background_image{
     content: "";
@@ -278,7 +289,7 @@ header .headmenu a:is(:hover,:focus) {
     overflow: hidden;
 }
 .main3 .cards .card:is(:hover,:focus) {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.3s ease;
 }
 
@@ -405,24 +416,63 @@ footer .foot1 {
 }
 
 @media (max-width:600px) {
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .togglemenu {
+        display:block;
+        height: 38px;
+    }
+    #togglecheck {
+        position: absolute;
+        opacity: 0;
+        z-index: 5;
         width: 40px;
-        height: 17px;
-        z-index: 1;
-        margin-right: 10px;
+        height: 38px;
+    }
+    .hamburger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 40px;
+        height: 100%;
+        z-index: 3;
     }
     .bar {
-        width: 40px;
+        width: 35px;
         height: 3px;
         background-color: #fff;
+        border-radius: 3px;
     }
-    header .headmenu a:is(:hover,:focus) {
-        color:none;
-        transform: none;
-        transition: none;
+    .bar:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    #menutoggled {
+        display:none
+    }
+    .togglemenu input:checked ~ #menutoggled {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        padding-left: 20px;
+        z-index: 1;
+        row-gap: 20px;
+        column-gap: 10px;
+        padding: 10px 20px;
+        top: 0px;
+        right:0;
+        height: fit-content;
+        min-height: 80px;
+        width: 100vw;
+        padding-right: 75px;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    #menutoggled>*:is(:hover,:focus) {
+        color:#E6606C;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
     }
     .hamburger:hover {
         cursor: pointer;
