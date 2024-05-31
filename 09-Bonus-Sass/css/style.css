@@ -21,6 +21,11 @@ ul, li {
   list-style: none;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   font-family: "Commissioner", sans-serif;
   overflow-x: hidden;
