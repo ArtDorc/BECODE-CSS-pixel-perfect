@@ -15,3 +15,5 @@ You can find a chronological list of the project here :
 5. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/09-Bonus-Sass">Sass 09 Bonus - Sass, complex and full responsive </a> - *05.28.2024*
 
 6. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/Tic-Tac-Toe/"> DOM - TicTacToe </a> - *05.30.2024*
+   
+7. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/Game-of-Throne-app/"> DOM - GoT app </a> - *06.06.2024*
