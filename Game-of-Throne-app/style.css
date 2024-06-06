@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100vw !important;
+    overflow-x:hidden !important;
+    min-height: 100vh;
+    background-color: #0C1015;
+    font-family: "Inter", sans-serif;
+}
+
+.sec1 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 45px;
+}
+
+.container .box1 {
+    background-color: #0C1015;
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 534px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.container .box1 .imgHolder {
+    position: relative;
+    transition: 0.4s ease all;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.container .box1 .imgHolder img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+.container .box1 .imgHolder .filter {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 0.4s ease all;
+    position: absolute;
+    pointer-events: none
+}
+.container .box1 .imgHolder:hover {
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+
+.container .box2 {
+    background-color: #24292F;
+    height: 100%;
+    aspect-ratio: 1/1;
+    padding: 50px;
+    max-width: 534px;
+}
+
+.container .box2 > * {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.container .box2 > .charact0 .description {
+    color: rgb(83, 83, 83);
+}
+.container .box2 > .charact0 {
+    display: block;
+    text-align: center;
+}
+
+.box2 > * .name {
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 1.375rem;
+    line-height: 1.4144rem;
+    margin-bottom: 7px;
+    font-weight: 400;
+}
+.box2 > * .house {
+    font-weight: 400;
+    color: #C92B2B;
+    font-size: 1.125rem;
+    line-height: 1.3625rem;
+    margin-bottom: 26px;
+}
+.box2 > * .description {
+    font-size: .875rem;
+    color: white;
+    line-height: 2em;
+}
