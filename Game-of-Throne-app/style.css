@@ -64,9 +64,9 @@ body {
     /* transform: scale(1.1); */
     cursor: pointer;
 }
-/* .container .box1 .imgHolder:hover .filter {
-    background-color: rgba(0, 0, 0, 0);
-} */
+ .container .box1 .imgHolder:hover .filter {
+    background-color: rgba(0, 0, 0, 0.45);
+} 
 .container .box2 {
     background-color: #24292F;
     height: 100%;
