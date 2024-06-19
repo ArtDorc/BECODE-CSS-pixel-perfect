@@ -19,3 +19,5 @@ You can find a chronological list of the project here :
 7. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/Game-of-Throne-app/"> DOM - GoT app </a> - *06.06.2024*
 
 8. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/Meal-Exercise/"> API - Recipe Website </a> - *06.13.2024*
+
+9. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/BeMovie"> API - BeMovie (netflix-like) </a> - *06.19.2024*
