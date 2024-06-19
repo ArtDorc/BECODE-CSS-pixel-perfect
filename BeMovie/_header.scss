@@ -1,0 +1,145 @@
+header {
+    font-family: $fontHeader;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    padding: 0 40px;
+    background-color: $bgHeader;
+
+    @include tablet {
+        padding: 0 80px;
+    }
+    @include laptop {
+        padding: 0 180px;
+    }
+    .logo {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        color: $white;
+        span{
+            color:$red;
+        }
+    }
+    .navMenu {
+        .menu {
+            display: none;
+            gap: 29px;
+            padding-left: 29px;
+            li {
+                transition: 0.3s all ease;
+                font-size: .875rem;
+                letter-spacing: 0.07em;
+                line-height: 1.05rem;
+                &:is(:hover,:focus) {
+                    color: $red;
+                }
+            }
+            @include tablet {
+                display: flex;
+            }
+        }
+        .hamburger{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 41px;
+            z-index: 9;
+            padding: 3px;
+            &:hover {
+                cursor:pointer;
+            }
+            @include tablet {
+                display: none;
+            }
+            .bar {
+                width: 35px;
+                height: 3px;
+                background-color:$white;
+                border-radius: 3px;
+                margin-bottom: 3px;
+                transition: all 0.4s ease;
+                &:last-child{
+                    margin-bottom: 0;;
+                }
+            }
+        }
+        
+        input[type="checkbox"] {
+            display:none;
+        }
+        #checkMenu {
+            & ~ .toggledmenu {
+                display: flex;
+                flex-direction: column;
+                background-color: $bgHeader;
+                position: absolute;
+                bottom:0;
+                transform: translateY(100%) translateX(100%);
+                transition: all 0.4s ease;
+                z-index: 11;
+                @include tablet {
+                    display:none;
+                }
+            }
+            &:checked ~ .toggledmenu {
+                transform: translateY(100%) translateX(-85%);
+            }
+    
+            &:checked ~ .hamburger .bar {
+                z-index: 9;
+                &:nth-child(2) {
+                    opacity:0;
+                }
+                &:first-child{
+                    transform-origin: top left;
+                    transform: rotate(45deg) translate(-4px, -7px);
+                }
+                &:last-child {
+                    transform-origin: bottom left;
+                    transform: rotate(-45deg) translate(-2px, 4px);
+                }
+            }
+        }
+    }
+    
+    .toggledmenu {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 60px 28px;
+        border-radius: 0 0 15px 15px;
+        li {
+            text-align: center;
+            white-space: nowrap;
+            color:$white;
+            size: 1.125rem;
+            line-height: 2rem;
+
+            a {
+                transition: all ease 0.3s;
+                &:is(:hover,:focus){color: $red;}
+            }
+    
+            &:last-child {
+                font-weight: 800;
+                line-height: 1.2225rem;
+                padding: 22px 45px;
+                border-radius: 15px;
+                background-color: $red;
+                &:is(:hover,:focus) {
+                    background-color: $hoverRed;
+                    cursor: pointer;
+                }
+            }
+        }
+        @include tablet {
+            display:none;
+        }
+    }
+
+}

@@ -1,0 +1,52 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 186px;
+    padding: 0 40px;
+    background-color: $bgHeader;
+    font-family: 'Inria Sans', sans-serif;
+    @include tablet {
+        padding: 0 80px;
+    }
+    @include laptop {
+        padding: 0 180px;
+    }
+    .logo {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        color: $white;
+        font-size: 2rem;
+        line-height: 2.6975rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        span{
+            color:$red;
+        }
+    }
+    .footerMenu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        width: 40%;
+        padding: 0 10px;
+        &>* {
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            font-size: .875rem;
+            line-height: 1.05rem;
+            font-weight: 700;
+            &:is(:hover,:focus) {
+                color:$red;
+                cursor: pointer;
+            }
+        }
+    }
+    .copyright{
+        font-weight: 300;
+        font-size: .875rem;
+        line-height: 1.05rem;
+        color: $grey;
+    }
+}

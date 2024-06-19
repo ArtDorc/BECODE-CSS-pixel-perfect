@@ -1,0 +1,224 @@
+.popup{
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    .signin{
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        .signin-bloc{
+            z-index: 1001;
+            width: 410px;
+            background-color: $bgHeader;
+            position: relative;
+            padding: 66px 61px 100px;
+            .cross {
+                position: absolute;
+                top: 11px;
+                left: 14px;
+                width: 1rem;
+                aspect-ratio: 1/1;
+                transition: 0.3s all ease;
+                &:is(:hover,:focus) {
+                    cursor: pointer;
+                }
+            }
+            .header{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+                text-transform: uppercase;
+                border: 1px solid white;
+                border-radius: 8px;
+                margin-bottom: 54px;
+                overflow: hidden;
+                &:is(:hover,:focus){
+                    cursor: pointer;
+                    &>*:nth-child(2) {
+                        background-color: $hoverRed;
+                    }
+                }
+                &>*{
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    font-family: $fontHeader;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 1.8125rem;
+                    letter-spacing: 0.03em;
+                    &:nth-child(2){
+                        background-color: $red;
+                    }
+                }
+            }
+        .connect {
+            .username,.password{
+                padding: 12px 20px;
+                border-radius: 8px;
+                margin-bottom: 24px;
+                overflow: hidden;
+                font-family: inherit;
+                width: 100%;
+            }
+            .rememberMe{
+                display: flex;
+                align-items: center;
+                gap: 9px;
+            }
+            #rememberMeCheckbox {
+                outline: none;
+                border: none;
+                width: 18px;
+                aspect-ratio: 1/1;
+            }
+            .loginButton{
+                font-family: $fontHeader;
+                margin-top: 46px;
+                height: 47px;
+                width: 100%;
+                background-color: $red;
+                border-radius: 8px;
+                text-transform: uppercase;
+                color: inherit;
+                text-align: center;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.03em;
+                font-weight: 700;
+                outline: none;
+                border: none;
+                &:is(:hover,:focus) {
+                    cursor: pointer;
+                    background-color: $hoverRed;
+                }
+                margin-bottom: 30px;
+            }
+        }
+        .forgot {
+            color: $red;
+        }
+        .notAMember {
+            margin-top: 19px;
+            a{
+                color: $red;
+            }
+        }
+        }
+    }
+}
+.movie-popup {
+    display:grid;
+    visibility: hidden;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 30px;
+    overflow: scroll;
+    .movie-popup-bloc{
+        position: relative;
+        background-color: $bgBlack;
+        max-width: 742px;
+        padding: 40px 40px 74px;
+        @include tablet {
+            padding: 74px 79px 74px;
+        }
+        .contentholder{
+            @include tablet {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 58px;
+            }
+            .imgholder {
+                max-width: 234px;
+                aspect-ratio: 234/351;
+                border: 1px white solid;
+                margin: 0 auto 28px;
+                
+            }
+            .textArea {
+                font-family: 'Inria Sans',sans-serif;
+                .title {
+                    text-transform: uppercase;
+                    color: $red;
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    letter-spacing: 0.03em;
+                }
+                .date {
+                    font-size: .875rem;
+                    font-weight: 700;
+                    line-height: 1.05rem;
+                    letter-spacing: 0.03em;
+                    margin-bottom: 11px;
+                }
+                .rating {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    font-weight: 700;
+                    color: $red;
+                    margin-bottom: 12px;
+                    img{
+                        aspect-ratio: 1;
+                        width: 21px;
+                    }
+                }
+                .category {
+                    font-size: .875rem;
+                    line-height: 1.05rem;
+                    letter-spacing: 0.03em;
+                    color: $grey;
+                    font-weight: 700;
+                    margin-bottom: 13px;
+                }
+                .description{
+                    font-size: 1rem;
+                    font-weight: 300;
+                    line-height: 1.5rem;
+                    letter-spacing: 0.03em;
+                    margin-bottom: 20px;
+                }
+                .cast {
+                    color: $grey;
+                    font-size: .875rem;
+                    line-height: 1.05rem;
+                    letter-spacing: 0.03em;
+                    font-weight: 400;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .crossMovie {
+        position: absolute;
+        top: 11px;
+        left: 14px;
+        width: 1rem;
+        aspect-ratio: 1/1;
+        &:is(:hover,:focus) {
+            cursor: pointer;
+        }
+    }
+
+}
