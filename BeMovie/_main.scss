@@ -1,0 +1,179 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    background-color: $bgBlack;
+    @include tablet {
+        padding: 0 80px;
+    }
+    @include laptop {
+        padding: 0 180px;
+    }
+    .researchBar {
+        height: 44px;
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 78px auto 61px;
+        box-shadow: 4px 8px 20px 0px #000;
+        width: fit-content;
+        #research {
+            padding-left: 18px;
+            width: 228px;
+            font-family: $fontBody;
+            line-height: 1.2125rem;
+            font-weight: 400;
+        }
+        .researchButton {
+            background-color: $red;
+            object-fit: contain;
+            display: grid;
+            place-items: center;
+            width: 44px;
+            height: 44px;
+            &:is(:hover,:focus) {
+                cursor: pointer;
+                background-color: $hoverRed;
+            }
+            img {
+                width: 18px;
+                height: 14px;
+            }
+        }
+    }
+    .displayResult{
+        margin-bottom: 95px;     
+        position: relative;
+        .header {
+            justify-self: flex-start;
+            align-self: flex-start;
+            padding-left: 42px;
+            margin-bottom: 10px;
+        }
+        .backgroundArrowRight{
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 42px;
+            background-color: $bgBlack;
+            z-index: 5;
+        }
+        .backgroundArrowLeft{
+            z-index: 5;
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 42px;
+            background-color: $bgBlack;
+        }
+        .swiper-button-prev {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            background-image: url('../BeMovie/ArrowPrev.png');
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+        .swiper-button-next {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            background-image: url('../BeMovie/Arrow.png');
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+        .swiper-button-next::after {
+            display: none;
+            }
+            
+        .swiper-button-prev::after {
+            display: none;
+            }
+        }
+        .swiper {
+            display: flex;
+            position: relative;
+            padding: 0 42px;
+            .swiper-slide {
+                aspect-ratio: 234/351;
+                object-fit: cover;
+                position: relative;
+            }
+    }
+    .hoverMovie{
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        padding:26px 20px;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        .title {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 23px;
+        }
+        .date {
+            color: $grey;
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .categories {
+            font-size: .875rem;
+            line-height: 1.0625rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .ratings{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            color: $red;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.42rem;
+            img{
+                width: 34px;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+    .categories {
+        .categoryHeader {
+            text-align: center;
+            .genre {
+                margin-bottom: 45px;
+            }
+            .genresList{
+                margin: 0 auto 29px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: white solid 1px;
+                padding-bottom: 26px;
+                gap: 10px;
+                flex-wrap: wrap;
+                max-width: 595px;
+                &>*{
+                    padding: 7px 9px;
+                    border-radius: 8px;
+                    &:is(:hover,:focus) {
+                        background-color: $hoverRed;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
