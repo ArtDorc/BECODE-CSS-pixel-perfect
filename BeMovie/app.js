@@ -26,7 +26,6 @@ function resetSwiper() {
         grabCursor: true,
     });
 }
-resetSwiper()
 
 //////     START POPUP PART /////////
 
