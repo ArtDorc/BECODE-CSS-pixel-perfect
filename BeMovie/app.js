@@ -349,7 +349,6 @@ async function initalisation () {
     headerResearch.innerText="";
     searchWrapper.innerHTML="";
     displayLastest();
-    console.log(navLinks);
     let firstGenre = navLinks.querySelector("a");
     firstGenre.classList.add("activeLink");
     displayGenre(firstGenre.innerText);
