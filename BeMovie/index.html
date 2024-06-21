@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeMovie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <header class="container">
+        <div class="logo"><span>Be</span>Movies</div>
+        <div class="navMenu">
+            <nav class="menu">
+                <li><a href="#research">Search</a></li>
+                <li><a href="#lastest">Latest</a></li>
+                <li><a href="#genre">Genres</a></li>
+                <li class="signinButton"><a href="#">Register</a></li>
+                <li class="signinButton"><a href="#">Signin</a></li>
+            </nav>
+            <input type="checkbox" name="" id="checkMenu">
+            <label for="checkMenu" class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <nav class="toggledmenu">
+                <li><a href="#research">Search</a></li>
+                <li><a href="#lastest">Latest</a></li>
+                <li><a href="#genre">Genres</a></li>
+                <li class="signinButton"><a href="#">Register</a></li>
+                <li class="signinButton"><a href="#">Signin</a></li>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="researchBar">
+            <input type="text" id="research" placeholder="Research" autocomplete="off">
+            <a class="researchButton"><img src="VectorArrow.svg" alt=""></a>
+        </div>
+        <div class="displayResult research">
+            <p class="header"><!-- Content will be added here --></p>
+            <div class="swiper" id="swipper1">
+                <div class="swiper-wrapper">
+                    <!-- Content will be added here -->
+                </div>
+                <div class="backgroundArrowLeft"><div class="swiper-button-prev"></div></div>
+                <div class="backgroundArrowRight"><div class="swiper-button-next"></div></div>
+            </div>
+        </div>
+        <div class="displayResult lastest" id="lastest">
+            <p class="header">Lastest Releases</p>
+            <div class="swiper" id="swipper2">
+                <div class="swiper-wrapper">
+                    <!-- Content will be added here -->
+                </div>
+                <div class="backgroundArrowLeft"><div class="swiper-button-prev"></div></div>
+                <div class="backgroundArrowRight"><div class="swiper-button-next"></div></div>
+            </div>
+        </div>
+        <div class="displayResult categories" id="genre">
+            <div class="categoryHeader">
+                <p class="genre">Movies by genre</p>
+                <ul class="genresList">
+                    <a>Comedy</a>
+                    <a>Drama</a>
+                    <a>Action</a>
+                    <a>Romance</a>
+                    <a>Fantasy</a>
+                    <a>Animation</a>
+                </ul>
+            </div>
+            <p class="header" id="category"><!-- Content will be added here --></p>
+            <div class="swiper" id="swipper3">
+                <div class="swiper-wrapper">
+                    <!-- Content will be added here -->
+                </div>
+                <div class="backgroundArrowLeft"><div class="swiper-button-prev"></div></div>
+                <div class="backgroundArrowRight"><div class="swiper-button-next"></div></div>
+            </div>
+        </div>
+    </main>
+    <section class="popup">
+        <div class="signin">
+            <div class="signin-bloc">
+                <a class="cross"><img src="cross.png" class="crossImg"alt=""></a>
+                <a href="#" class="header">
+                    <div class="signup signupOff">Signup</div>
+                    <div class="login activeLink">Login</div>
+                </a>
+                <form action="" class="connect" id="connect">
+                    <input type="text" class="username" placeholder="Username">
+                    <input type="text" class="email hidden" placeholder="e-mail">
+                    <input type="password" class="password" placeholder="Password">
+                    <input type="password" class="confirmPassword hidden" placeholder="Confirm password">
+                    <div class="rememberMe">
+                        <input type="checkbox" id="rememberMeCheckbox">
+                        <label class="remembertext" for="rememberMeCheckbox">Remember me</label>
+                    </div>
+
+                    <button class="loginButton">Login</button>
+                </form>
+                <a href="#" class="forgot">I forgot my password</a>
+                <p class="notAMember">Not a member yet ?<a href="#"> Sign-up</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="movie-popup">
+        <div class="movie-popup-bloc">
+            <div class="crossMovie"><img class="crossMovieImg" src="cross.png" alt=""></div>
+            <div class="contentholder">
+            </div>
+        </div>
+    </section>
+    <footer class="container">
+        <div class="logo"><span>Be</span>Movies</div>
+        <nav class="footerMenu">
+            <a href="#research">Search</a>
+            <a href="#lastest">Latest</a>
+            <a href="#genre">Genres</a>
+            <a class="signinButton">Register</a>
+            <a class="signinButton">Signin</a>
+        </nav>
+        <p class="copyright">@2023 - All rights reserved</p>
+    </footer>
+</body>
+<script src="swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</html>
