@@ -1,7 +1,8 @@
 # Welcome
 
-This page present to you the the more complete projects made during my training in BeCode in an anti-chronological order.
-These projects has been made entirely by Arthur Dorchies using various technologies and using design from available figmas :
+This page present to you the more complete projects made during my training in BeCode in an anti-chronological order.
+These projects has been made entirely by Arthur Dorchies and using figmas for design ressources.
+Keep in mind that those project are made as training exercises for specifics technics and only the targeted features are complete.
 
 4. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/BeMovie"> API final - BeMovie "netflix-like" </a> - *06.19.2024*
 
