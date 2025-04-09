@@ -1,6 +1,6 @@
 # Welcome
 
-This page presents to you some projects in reverse chronological order.\
+This page presents to you some projects in reverse chronological order.
 
 4. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/BeMovie"> API final - BeMovie "netflix-like" </a> - *06.19.2024*
 
