@@ -1,7 +1,6 @@
 # Welcome
-This page presents to you the most complete projects made during my training at BeCode in reverse chronological order.\
-These projects were made entirely by Arthur Dorchies and used Figma for design resources.\
-Keep in mind that these are training exercises for specific techniques, and only the targeted features are meant to be complete.
+
+This page presents to you some projects in reverse chronological order.\
 
 4. <a target="_blank" href="https://artdorc.github.io/BECODE-CSS-pixel-perfect/BeMovie"> API final - BeMovie "netflix-like" </a> - *06.19.2024*
 
